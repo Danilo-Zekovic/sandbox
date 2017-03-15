@@ -1,2 +1,2 @@
 # sandbox
-Initial getting to know github
+Playground for new tehnologies 
