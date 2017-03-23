@@ -1,4 +1,4 @@
-# sandbox by Danilo Zekovic
+# Sandbox By Danilo Zekovic
 Playground for new tehnologies
 
 1. facbook react app generator
