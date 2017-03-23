@@ -1,7 +1,7 @@
 {
   "name": "github-battle",
   "version": "1.0.0",
-  "description": "",
+  "description": "Comparing two github accounts",
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
