@@ -4,10 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -d",
-    "build:watch": "webpack -d -w",
-    "build:production": "webpack -p",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+
+    "build:app": "webpack -d",
+    "build:app:watch": "webpack -d -w",
+    "build:app:production": "webpack -p",
+
+    "build:appshell": "node build-appshell.js",
+    "build:appshell:watch": "node build-appshell.js -w",
+
+    "build:production": "npm run build:app:production; npm run build:appshell"
   },
   "keywords": [],
   "author": "",
