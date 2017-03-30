@@ -31,4 +31,25 @@ const config = {
   plugins:[HtmlWebpackPluginConfig]
 };
 
-module.exports = config;
+const shellConfig = {
+  target: 'node',
+
+  entry: path.resolve(SRC_DIR, 'appshell.js'),
+
+  output: {
+    path: DIST_DIR,
+    filename: 'appshell.js',
+  },
+
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        include: SRC_DIR,
+        loader: 'babel-loader',
+      },
+    ],
+  },
+};
+
+module.exports = [config, shellConfig];
