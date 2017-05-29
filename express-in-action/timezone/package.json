@@ -1,0 +1,10 @@
+{
+  "name": "timezone-api",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+  }
+}
