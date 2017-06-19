@@ -14,7 +14,7 @@ const ChannelsList = ({ data: {loading, error, channels }}) => {
   }
   return (
     <div className="channelsList">
-      <AddChannel /> 
+      <AddChannel />
       { channels.map( ch =>
         (<div key={ch.id} className="channel">{ch.name}</div>)
       )}
@@ -31,4 +31,6 @@ const channelsListQuery = gql`
   }
 `;
 
-export default graphql(channelsListQuery)(ChannelsList);
+export default graphql(channelsListQuery, {
+  options: { pollInterval: 5000 },
+})(ChannelsList);
