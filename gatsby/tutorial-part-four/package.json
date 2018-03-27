@@ -13,6 +13,7 @@
     "gatsby-plugin-glamor": "^1.6.13",
     "gatsby-plugin-typography": "^1.7.18",
     "gatsby-source-filesystem": "^1.5.27",
+    "gatsby-transformer-remark": "^1.7.38",
     "glamorous": "^4.12.1",
     "typography-theme-kirkham": "^0.16.3"
   }
