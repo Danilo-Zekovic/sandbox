@@ -26,6 +26,15 @@ const Header = () => (
           Gatsby
         </Link>
       </h1>
+      <Link
+        to="/write-post"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+        }}
+      >
+        Write Post
+      </Link>
     </div>
   </div>
 )
